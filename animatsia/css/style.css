@@ -1,0 +1,107 @@
+article{
+    border:  1px solid grey;
+    width:  500px;
+    height: 280px;
+    border-left: 45px solid purple;
+    position: relative;
+
+}
+h1{
+    transform: rotate(90deg);
+    top: 100px;
+    position: absolute;
+    left: -150px;
+    color: white;
+}
+.img{
+    width: 1080px;
+    height: 380px;
+    background: url(../img/home.png) repeat-x 0 100%;
+    margin: 0 auto;
+    background-size: 100%;
+    animation:  home 5s linear;
+    border: 1px solid black;
+}
+@keyframes home{
+    from{
+        background-position: 1000px 100%;
+    }
+    to{
+        background-position: 0 100%;
+    }
+}
+.car{
+    transform: translateY(280px );
+    position: relative;
+    z-index: 2;
+    animation: car 7s linear;
+    animation-fill-mode: both;
+    
+    
+}
+@keyframes car{
+    from{
+        transform: translateY(280px );
+    }
+    to{
+        transform: translate(800px,280px);
+    }
+}
+.coloso1{
+    position: absolute;
+    transform: translate(-199px, 44px);
+    animation: coloso1 7s linear;
+    
+}
+.coloso2{
+    position: absolute;
+    transform: translate(-50px, 44px);
+    animation: coloso2 7s linear;
+    
+}
+@keyframes coloso1{
+    from{
+        transform: translate(-199px, 44px) rotate(1turn);
+    }
+    to{
+        transform: translate(-199px, 44px) rotate(5turn);
+    }
+}
+@keyframes coloso2{
+    from{
+        transform: translate(-50px, 44px) rotate(1turn);
+    }
+    to{
+        transform: translate(-50px, 44px) rotate(5turn);
+    }
+}
+.gaz1{
+    position: absolute;
+    transform:scale(0.5) translate(-450px 105px);
+    animation: gaz1 5s 1s;
+}
+.gaz2{
+    position: absolute;
+    transform:scale(0.5) translate(-568px 90px);
+    animation: gaz2 5s 1s;
+}
+@keyframes gaz1{
+    from{
+        transform:scale(0.5) translate(-450px 105px);
+        opacity: 1;
+    }
+    to{
+        transform:scale(0.5) translate(-450px 105px);
+        opacity: 0;
+    }
+}
+@keyframes gaz2{
+    from{
+        transform: scale(0.5) translate(-568px 90px);
+        opacity: 1;
+    }
+    to{
+        transform: scale(0.5) translate(-568px 90px);
+        opacity: 0;
+    }
+}
